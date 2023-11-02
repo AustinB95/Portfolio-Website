@@ -1180,9 +1180,11 @@ body.dark-theme {
     background-color: var(--black-color);
     color: var(--white-color);
     padding: 1.1rem 1.5rem;
+    border-radius: 180px;
   }
   .nav__link-button:hover {
     color: var(--white-color);
+    background-color: var(--first-color);
   }
   .change-theme {
     color: var(--text-color);
