@@ -266,6 +266,11 @@ body.dark-theme {
   font-size: 1.25rem;
   cursor: pointer;
 }
+.nav__link-button i {
+  position: relative;
+  left: -8px;
+  top: 2px;
+}
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
@@ -1328,6 +1333,7 @@ body.dark-theme {
   }
   .about__list {
     margin-bottom: 5rem;
+    font-size: var(--h3-font-size);
   }
   .about__buttons {
     justify-content: initial;
