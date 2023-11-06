@@ -141,20 +141,29 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
-  duration: 2500,
-  delay: 400,
-  // reset: true,
+  duration: 2800,
+  delay: 200,
+  reset: true,
 });
 
-sr.reveal(".home__perfil, .about__image, .contact__mail", { origin: "right" });
-sr.reveal(
-  ".home__name, .home__info, .about__container .section__title-1,\
+document.addEventListener("DOMContentLoaded", function () {
+  sr.reveal(".home__perfil, .about__image, .contact__mail", {
+    origin: "right",
+  });
+  sr.reveal(
+    ".home__name, .home__info, .about__container .section__title-1,\
    .about__info, .contact__social, .contact__data",
-  {
-    origin: "left",
-  }
-);
-sr.reveal(".services__card, .projects__card", { interval: 100 });
+    {
+      origin: "left",
+    }
+  );
+  sr.reveal(".services__card, .projects__card", { interval: 100 });
+
+  setTimeout(() => {
+    document.getElementById("body").classList.remove("hidden");
+  }, 100);
+});

@@ -40,6 +40,8 @@
   --z-fixed: 100;
 }
 
+/* ======= Hide Picture / Home until JS is loaded */
+
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
@@ -1140,6 +1142,9 @@ body.dark-theme {
   .container {
     margin-inline: auto;
   }
+  .projects__container {
+    padding-bottom: 100px;
+  }
   .section {
     padding-block: 7rem 2rem;
   }
@@ -1366,10 +1371,10 @@ body.dark-theme {
   .services__card:hover .services__border {
     transform: translate(1.25rem, 1.25rem);
   }
-  /* Add back when more projects */
+  /* Add back when more projects  */
   /* .projects__container {
     grid-template-columns: repeat(3, 352px);
-    padding-block: 3rem 1rem;
+    padding-block: 7rem 3rem;
   }
   .projects__card {
     padding: 1.25rem 1.25rem 2.5rem;
@@ -1452,4 +1457,13 @@ body.dark-theme {
     column-gap: 3rem;
     order: 1;
   }
+}
+
+.hidden {
+  visibility: hidden;
+}
+/* 318 x 211.17 */
+.projects__img {
+  width: 318px;
+  height: 211.17px;
 }
