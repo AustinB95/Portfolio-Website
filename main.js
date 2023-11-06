@@ -165,5 +165,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(() => {
     document.getElementById("body").classList.remove("hidden");
-  }, 100);
+  }, 300);
 });
