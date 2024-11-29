@@ -1511,6 +1511,23 @@ body.dark-theme {
     right: 1.25rem;
   } */
 
+  .certificates__container {
+    grid-template-columns: repeat(3, 352px);
+    padding-block: 7rem 3rem;
+  }
+  .certificates__card {
+    padding: 1.25rem 1.25rem 2.5rem;
+  }
+  .certificates__image {
+    margin-bottom: 1rem;
+  }
+  .certificates__content {
+    margin-bottom: 2rem;
+  }
+  .certificates__button {
+    right: 1.25rem;
+  }
+
   .contact__container {
     grid-template-columns: 440px 670px;
     grid-template-rows: initial;
